@@ -13,7 +13,7 @@ public class HomeController {
 
     @CrossOrigin
     @ResponseBody
-    @RequestMapping(value = "/",method = RequestMethod.GET)
+    @RequestMapping(value = "/home/",method = RequestMethod.GET)
     public HomePage hello(){
         return service.save(new HomePage("Hello World"));
     }
